@@ -1,0 +1,106 @@
+ocê quer apenas a estrutura inicial de um site, aqui está um exemplo simples em HTML5, já com uma barra de navegação, uma seção principal e um rodapé.
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+            color:#333;
+        }
+
+        header{
+            background:#0d6efd;
+            color:white;
+            padding:20px;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+        }
+
+        .hero{
+            text-align:center;
+            padding:80px 20px;
+        }
+
+        .hero h1{
+            font-size:48px;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:20px;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#0d6efd;
+            color:white;
+            padding:15px 30px;
+            border-radius:5px;
+            text-decoration:none;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#222;
+            color:white;
+            margin-top:60px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>MeuSite</h2>
+
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Bem-vindo ao meu site</h1>
+
+    <p>
+        Este é um modelo básico criado apenas com HTML e CSS.
+    </p>
+
+    <a href="#" class="btn">Saiba Mais</a>
+</section>
+
+<footer>
+    <p>&copy; 2026 - Meu Site. Todos os direitos reservados.</p>
