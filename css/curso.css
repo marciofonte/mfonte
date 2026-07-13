@@ -1,0 +1,191 @@
+/* Configurações Gerais com o fundo-bg.png integrado */
+body {
+    background-color: #0b0b0b;
+    background-repeat: repeat;
+    background-position: top center;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ajustes da Logomarca no Header */
+.hero-section {
+    padding: 40px 20px;
+    background: transparent; /* Permite que o fundo geral apareça por baixo */
+    background-image: url('../img/fundo-bg.png'); /* Caminho da imagem de colmeia enviada */
+}
+
+.header-logo {
+    max-height: 480px; /* Mantém proporção elegante em telas grandes */
+    width: auto;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .header-logo {
+        max-height: 320px; /* Ajuste para não quebrar em telas mobile */
+    }
+}
+
+/* Paleta de Cores do Projeto */
+.text-orange { color: #ff6a00 !important; }
+.text-blue { color: #0099ff !important; }
+.text-yellow { color: #ffcc00 !important; }
+.text-muted-custom { color: #a0a0a0; }
+
+/* Navigation */
+.custom-nav {
+    background-color: rgba(22, 22, 22, 0.9); /* Leve transparência para integrar ao fundo */
+    border-top: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+    backdrop-filter: blur(5px);
+}
+.custom-nav a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+.custom-nav a:hover {
+    color: #ff6a00;
+}
+.custom-nav span {
+    color: #333;
+}
+
+/* Seções */
+.section-title-blue {
+    color: #0099ff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+.highlight-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+.btn-saiba {
+    color: #ff6a00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    display: inline-block;
+}
+.btn-saiba:hover {
+    text-decoration: underline;
+}
+
+/* Grid de Módulos */
+.badge-modulo {
+    background-color: #ff6a00;
+    color: #fff;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.badge-modulo.text-orange {
+    background-color: #ffffff;
+    color: #ff6a00 !important;
+}
+.modulo-time {
+    color: #888;
+    font-size: 0.9rem; /* Tamanho ajustado para melhor leitura ao lado do badge */
+    font-weight: bold;
+    white-space: nowrap; /* Evita que o texto quebre em telas menores */
+}
+.modulo-title {
+    font-size: 1.15rem;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.modulo-list {
+    list-style: none;
+    padding-left: 0;
+}
+.modulo-list li {
+    font-size: 0.9rem;
+    color: #dcdcdc;
+    margin-bottom: 6px;
+}
+
+/* Seção Projeto Final */
+.projeto-section {
+    background-color: rgba(18, 18, 18, 0.85);
+    border-top: 2px solid #222;
+    backdrop-filter: blur(5px);
+}
+.projeto-btn-title {
+    background-color: #3897f0;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 25px;
+    width: fit-content;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(56, 151, 240, 0.3);
+}
+.projeto-list {
+    list-style: none;
+    padding-left: 0;
+}
+.projeto-list li {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    color: #e0e0e0;
+}
+.custom-hr {
+    border-color: #444;
+    opacity: 0.6;
+}
+.badge-importante {
+    display: inline-block;
+    background-color: #d9383a;
+    color: white;
+    font-weight: bold;
+    font-size: 0.85rem;
+    padding: 4px 16px;
+    border-radius: 4px;
+}
+.text-aviso {
+    max-width: 800px;
+    font-size: 0.85rem;
+    color: #b0b0b0;
+    line-height: 1.6;
+}
+
+/* Rodapé e Inscrição */
+.footer-section {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-top: 1px solid #1a1a1a;
+    background-image: url('../img/fundo-bg.png'); /* Caminho da imagem de colmeia enviada */
+}
+.btn-inscricao {
+    display: inline-block;
+    background-color: #e5c158;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+.btn-inscricao:hover {
+    background-color: #ffd86b;
+    color: #000;
+    transform: scale(1.03);
+}
+
+/* Ajustes para telas maiores */
+@media (min-width: 768px) {
+    .border-md-right {
+        border-right: 1px solid #333;
+    }
+    .padding-left-md {
+        padding-left: 30px;
+    }
+}
