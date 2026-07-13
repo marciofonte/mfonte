@@ -1,0 +1,11 @@
+# Arquivos editáveis
+PSD/
+*.psd
+*.ai
+
+# Arquivos de backup
+backup/
+*.zip
+
+# Arquivos temporários
+*.tmp
